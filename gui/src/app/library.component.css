@@ -1,0 +1,172 @@
+/* Set default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Entire library container */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  width: 75%;
+  margin: auto;
+  border: 10px solid #fff;
+  background-color: #fff;
+  height: 80vh;
+}
+
+/* Left section (playlists) */
+.left-section {
+  margin-right: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 80vh;
+  background-color: #4c0bd1;
+  color: #fff;
+}
+
+/* Right section (songs) */
+.right-section {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background-color: #4c0bd1;
+}
+
+.add-playlist-btn {
+  padding: 10px 20px;
+  background-color: #2b69c7;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.remove-playlist-btn {
+  padding: 10px 20px;
+  background-color: #c53c30;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.add-playlist-btn:hover {
+  background-color: #3887ff;
+}
+
+.remove-playlist-btn:hover {
+  background-color: #e6483a;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playlist-btn-lib {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border: none !important;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ddd;
+}
+
+.playlist-btn-lib.active {
+  background-color: #35088f;
+}
+
+/* Playlist and song headers */
+.right-section h2, .left-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.right-section h2 {
+  margin-bottom: 70px;
+}
+
+.play-btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  color: #208c21;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  color: #d10b0b;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-btn:hover, .remove-btn:hover {
+  background-color: #acacac;
+}
+
+.song-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-left: -30px;
+}
+
+.song-item:last-child {
+  border-bottom: none;
+}
+
+table td, table th {
+  border: none !important;
+}

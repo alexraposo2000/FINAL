@@ -1,0 +1,169 @@
+/* Center the form */
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Style the search label */
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Style the search input */
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+/* Style the search type dropdown */
+select[name="search-type"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+/* Style the search button */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4c0bd1;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect on search button */
+button[type="submit"]:hover {
+  background-color: #5e0eff !important;
+}
+
+/* Center the form and search results */
+#search-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Style the search label */
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Style the search input */
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+/* Style the search type dropdown */
+select[name="search-type"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+/* Style the search button */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4c0bd1;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect on search button */
+button[type="submit"]:hover {
+  background-color: #520cdf;
+}
+
+/* Style the search results table */
+#search-results table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #f0dcff;
+}
+
+#search-results th,
+#search-results td {
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+#result-subheader {
+  padding-bottom: 12px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#search-results th {
+  background-color: #4c0bd1;
+  color: #fff;
+}
+
+.song-name, .artist-name {
+  font-size: 1em !important;
+}
+
+.playlist-button {
+  background-color: #2b69c7;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 0.8em;
+}
+
+.play-button {
+  background-color: #208c21;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.playlist-button:hover {
+  background-color: #3887ff;
+}
+
+.play-button:hover {
+  background-color: #2bb62e;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td, table th {
+  border: 1px solid black;
+}

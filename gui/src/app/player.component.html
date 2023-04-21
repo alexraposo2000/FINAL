@@ -1,0 +1,29 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="player.component.css">
+</head>  
+<div class="player-container">
+  <!-- Song and artist name -->
+  <div class="song-name-player">{{ currentSong.songName }}</div>
+  <div class="artist-name-player">{{ currentSong.artistName }}</div>
+  <!-- Time duration bar -->
+  <div class="time-bar">
+    <div class="elapsed-bar" [style.width.%]="elapsedBarWidth"></div>
+  </div>
+  <div class="song-time">
+    <span class="time-elapsed">{{ formattedTimeElapsed }}</span>
+    <span class="time-separator">/</span>
+    <span class="time-remaining">{{ formattedTimeRemaining }}</span>
+  </div>
+  <!-- Playback controls -->
+  <div class="song-controls">
+    <button class="skip-back-button" (click)="skipBack()">
+      <img class = "skip-button-image" src="../assets/skip-outline.png" alt="Skip Back">
+    </button>
+    <button class="play-pause-button" (click)="togglePlayPause()">
+      <img id="playPauseButton" class="play-pause-button" src="../assets/play.png" alt="Play">
+    </button>
+    <button class="skip-forward-button" (click)="skipForward()">
+      <img class="skip-button-image" src="../assets/skip-outline.png" alt="Skip Forward">
+    </button>
+  </div>
+</div>

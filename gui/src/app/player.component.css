@@ -1,0 +1,125 @@
+/* Set up a container for the player */
+.player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #4c0bd1;
+}
+
+/* Song name */
+.song-name-player {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+  color:#ddd;
+}
+
+/* Style artist name */
+.artist-name-player {
+  font-size: 1.25em;
+  color: #e43397;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Time duration bar */
+.time-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 20px;
+  background-color: #ddd;
+  position: relative; /* Add this line */
+}
+
+/* Elapsed time bar */
+.elapsed-bar {
+  height: 100%;
+  background-color: #e43397;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.time-elapsed {
+margin-right: 10px;
+}
+
+/* Remaining time */
+.time-remaining {
+margin-left: 10px;
+}
+
+.time-elapsed, .time-remaining, .time-separator {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Style the buttons */
+.song-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.play-pause-button, .skip-button {
+  width: 30px;
+  height: 30px;
+  background-color: #e43397;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-pause-button {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.play-pause-button-image {
+    width:30px;
+    height: 30px;
+}
+  
+.skip-button-image {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+}
+
+.play-pause-button:hover, .skip-button:hover {
+  background-color: #e43397;
+}
+
+/* Style the skip forward button (on the left of the play/pause button) */
+.skip-back-button {
+  transform: rotate(180deg);
+  background: transparent;
+  border: none;
+}
+
+/* Style the skip back button (on the right of the play/pause button) */
+.skip-forward-button {
+  transform: rotate(0deg);
+  background: transparent;
+  border: none;
+  padding-top: 5px;
+}

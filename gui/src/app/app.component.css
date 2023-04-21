@@ -1,0 +1,78 @@
+/* Global styles */
+html {
+  height: 100%;
+  background-color: #222;
+  color: #222;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  background-color: #4c0bd1;
+}
+
+nav a {
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  font-size: 30px;
+}
+
+nav a:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+nav a.active {
+  background-color: rgba(255,255,255,0.4);
+}
+
+/* Home tab style */
+nav a:first-child {
+  margin-left: 0;
+  margin-right: 200px;
+}
+
+.logo {
+  display: block;
+  margin: 100px auto 50px auto;
+  width: 200px;
+  z-index: 2;
+  position: relative;
+}
+
+main {
+  margin-top: 50px;
+  padding: 50px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 0;
+  background-color: #222;
+  min-height: calc(100% - 130px);
+}
+
+* {
+  caret-color: transparent;
+}

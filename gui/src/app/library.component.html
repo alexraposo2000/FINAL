@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playlist Viewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left section for playlist list -->
+      <div class="left-section">
+        <h2>Playlists</h2>
+        <div class="btn-wrapper">
+          <button (click)="addPlaylist()" class="add-playlist-btn">Add</button>
+          <button (click)="removePlaylist()" class="remove-playlist-btn">Remove</button>
+          <div (click)='playPlaylist()' class="play-btn"><i class="fas fa-play"></i></div>
+        </div>
+        <table>
+        <tr *ngFor="let p of playlists; let i = index" name="playlist-list">
+          <td name="playlist-name"><button class="playlist-btn-lib" id="{{p.id}}" (click)="showSongs($event)" >{{p.playlistName}}</button></td>
+        </tr>
+        </table>
+      </div>
+      
+      <!-- Right section for song list -->
+      <div class="right-section">
+        <h2 id="songs-header">Songs</h2>
+        <ul *ngFor="let s of songlist; let i = index" class="song-list" name="playlist-songs-list">
+          <li class="song-item" name="song-name">
+            <div id="{{s.id}}" (click)='removeSong($event)' class="remove-btn"><i id = "{{s.id}}" class="fas fa-minus"></i></div>
+            <div (click)='playSong($event, i)' class="play-btn"><i class="fas fa-play"></i></div>
+            <div class="song-name">{{s.songName}}</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

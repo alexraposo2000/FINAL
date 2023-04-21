@@ -1,0 +1,44 @@
+<html>
+
+<head>
+   <title>Search</title>
+ </head>
+ <body>
+   <form>
+     <!-- Search text entry -->
+     <label for="search-input">Search:</label>
+     <input type="text" id="search-input" name="search-input">
+
+     <!-- Drop down for search type -->
+     <select id="search-type" name="search-type">
+       <option value="song">Song</option>
+       <option value="playlist">Playlist</option>
+       <option value="album">Album</option>
+     </select>
+
+     <!-- Search button -->
+     <button (click)="search($event)" type="submit">Search</button>
+   </form>
+
+   <!-- Search results section -->
+   <div id="search-results">
+     <h2>Search Results</h2>
+     <div id="result-subheader"></div>
+     <table>
+       <thead>
+         <tr>
+           <th>Name</th>
+           <th>Artist</th>
+           <th>Playlist</th>
+           <th>Action</th>
+         </tr>
+       </thead>
+       <tbody>
+         <!-- Results will be dynamically generated here -->
+       </tbody>
+     </table>
+   </div>
+
+ </body>
+
+</html>
